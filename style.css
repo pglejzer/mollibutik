@@ -1,20 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa|Dancing+Script|Marck+Script');
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Petit+Formal+Script');
 
+/*Header*/
 
 .header__img {
-    width: 60px;
-    height: 60px;
+width: 60px;
+height: 60px;
+}
+
+.navbar-fixed-top.scrolled {
+    background-color: rgb(242, 222, 222)!important;
+    transition: background0ms linear;
 }
 
 nav {
     background-color: transparent !important;
     border: 0!important;
     padding: 20px;
-    font-family: 'Raleway' !important;
-    padding-top: 25px;
-    font-size: 1.7rem;
-    font-weight: 600;
+    font-family: 'Raleway';
+    font-weight: 700;
 }
 
 nav li a {
@@ -31,36 +36,24 @@ nav li a:active {
     /* Style for "active" */
     color: rgb(0, 0, 0);
     border-top: 3px solid rgb(237, 22, 82);
+    transition-duration: 1s !important;
+    transition-timing-function: ease-in-out;
 }
 
-.navbar-fixed-top.scrolled {
-    background-color: #fff !important;
-    transition: background-color 200ms linear;
-}
-
-
-/*Main*/
-.row2{
-    padding-top: 120px;
-    padding-bottom: 100px;
-}
-
-#main {
+.header {
     height: auto;
     min-height: 800px;
-    background: rgb(255, 255, 255); 
+    background: rgb(255, 255, 255);
     padding-bottom: 100px;
-}
-#main .container{
-    padding-top:250px;
-    
-}
-.main__container {
-    position: relative;
-    z-index: 1;
+
+
 }
 
-.main__container::before {
+.header {
+    background: none;
+}
+
+.header::before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -68,108 +61,165 @@ nav li a:active {
     bottom: 0;
     left: 0;
     right: 0;
-    background: url(images/logs/logo-trans2.png) no-repeat center center;
-    opacity: 0.08;
+    background: url(images/logs/logo-trans2.png) no-repeat right center;
+    opacity: 0.12;
 }
+
+/*Main*/
+
+.container1 {
+    padding-top: 250px;
+}
+
 
 .main__h1 {
     font-size: 60px;
     font-family: 'Marck Script', cursive;
 }
-.main__p{
+
+.main__p {
     font-size: 25px;
 }
-.main__hour{
-    color:  rgb(237, 22, 82);
+
+.main__hour {
+    color: rgb(237, 22, 82);
     font-weight: 800;
+}
+
+.main__social__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 65px;
+}
+
+.main__social__icons a i:hover {
+    transform: scale(1.5);
+    transition: 1s;
+    text-decoration: none;
+}
+
+.fab {
+    padding: 10px;
 }
 
 /*About us*/
 
-#about_us{
+.row2 {
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+
+#about_us {
     background: rgb(248, 230, 217);
     font-family: 'Raleway';
 }
 
-.about__us__h2{
+.about__us__h2 {
+    font-family: 'Petit Formal Script', cursive;
     font-weight: 600;
     font-size: 90px;
 }
-.about__us_p{
+
+.about__us_p {
     font-weight: 500;
 }
-.about_us__img{
+
+.about_us__img {
     border-radius: 100%;
-    
 }
+
 
 /*Gallery*/
 
-#gallery{
+#gallery {
     font-family: 'Raleway';
-    background: rgb(255,155,25);
+    background: rgba(207, 135, 145, 0.4)
 }
 
-.gallery__h2{
+.gallery__h2 {
+    font-family: 'Petit Formal Script', cursive;
     font-size: 90px;
     font-weight: 600;
     padding-top: 50px;
 }
-.row3{
+
+.row3 {
     padding: 40px 0;
 }
 
-#gallery .row img{
+#gallery .row img {
     padding-bottom: 15px;
 }
-.gallery__container1{
+
+.gallery__container1 {
     display: flex;
     justify-content: center;
 }
-.gallery__btn__container{
+
+.gallery__btn__container {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 25px 0;
 }
-.btn1{
+
+.btn1 {
     padding: 10px;
 }
-.gallery__btn__span{
+
+.gallery__btn__span {
     font-size: 20px;
 }
-.gallery__h3{
-    font-size:  70px;
+
+.gallery__h3 {
+    font-family: 'Petit Formal Script', cursive;
+    font-size: 70px;
 }
-.row4{
+
+.row4 {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 40px 0;
 }
 
+
 /*contact*/
 
-#contact{
-    min-height: 500px;
+#contact {
+    min-height: 800px;
     height: auto;
-    background-color: rgb(90,150,90);
+    background-color: #CF8791;
 }
 
 #map {
-   height: 400px;
-   background-color: grey;
+    width: 90%;
+    height: 400px;
+    background-color: grey;
+}
+.contact__h2_main{
+    font-size: 90px;
+    padding: 30px;
+    font-family: 'Raleway';
+}
+.contact__container {
+    padding: 60px 0;
 }
 
-.contact__container{
-    padding:60px 0;
+.contact__ul li{
+    font-size: 20px;
+    text-decoration: none;
+    list-style-type: none;
 }
 
-.btn2{
+.btn2 {
     padding: 10px;
 }
-/*footer*/
 
+
+
+/*footer*/
 
 .footer__down {
     /* Style for "bg-foodter" */
@@ -182,6 +232,7 @@ nav li a:active {
 
 .footer_p {
     /* Style for "© 2015 Com" */
+    padding-top: 15px;
     color: rgb(255, 255, 255);
     font-size: 16px;
     font-weight: 300;
@@ -192,7 +243,13 @@ nav li a:active {
     padding-left: 5px;
     padding-right: 5px;
 }
-.footer__down img{
-    width: 20%;
-    height: 20%;
+
+.footer__img {
+    width: 15%;
+    height: 10%;
+}
+
+.footer__a:hover {
+    text-decoration: none;
+    opacity: 0.8;
 }
