@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Dancing+Script|Marck+Script');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900');
+
+
+.header__img {
+    width: 60px;
+    height: 60px;
+}
+
+nav {
+    background-color: transparent !important;
+    border: 0!important;
+    padding: 20px;
+    font-family: 'Raleway' !important;
+    padding-top: 25px;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+nav li a {
+    color: rgb(0, 0, 0) !important;
+}
+
+nav li a:hover {
+    background-color: transparent !important;
+    color: rgb(0, 0, 0) !important;
+    border-top: 3px solid rgb(237, 22, 82);
+}
+
+nav li a:active {
+    /* Style for "active" */
+    color: rgb(0, 0, 0);
+    border-top: 3px solid rgb(237, 22, 82);
+}
+
+.navbar-fixed-top.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+}
+
+
+/*Main*/
+.row2{
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+
+#main {
+    height: auto;
+    min-height: 800px;
+    background: rgb(255, 255, 255); 
+    padding-bottom: 100px;
+}
+#main .container{
+    padding-top:250px;
+    
+}
+.main__container {
+    position: relative;
+    z-index: 1;
+}
+
+.main__container::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(images/logs/logo-trans2.png) no-repeat center center;
+    opacity: 0.08;
+}
+
+.main__h1 {
+    font-size: 60px;
+    font-family: 'Marck Script', cursive;
+}
+.main__p{
+    font-size: 25px;
+}
+.main__hour{
+    color:  rgb(237, 22, 82);
+    font-weight: 800;
+}
+
+/*About us*/
+
+#about_us{
+    background: rgb(248, 230, 217);
+    font-family: 'Raleway';
+}
+
+.about__us__h2{
+    font-weight: 600;
+    font-size: 90px;
+}
+.about__us_p{
+    font-weight: 500;
+}
+.about_us__img{
+    border-radius: 100%;
+    
+}
+
+/*Gallery*/
+
+#gallery{
+    font-family: 'Raleway';
+    background: rgb(255,155,25);
+}
+
+.gallery__h2{
+    font-size: 90px;
+    font-weight: 600;
+    padding-top: 50px;
+}
+.row3{
+    padding: 40px 0;
+}
+
+#gallery .row img{
+    padding-bottom: 15px;
+}
+.gallery__container1{
+    display: flex;
+    justify-content: center;
+}
+.gallery__btn__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+}
+.btn1{
+    padding: 10px;
+}
+.gallery__btn__span{
+    font-size: 20px;
+}
+.gallery__h3{
+    font-size:  70px;
+}
+.row4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+/*contact*/
+
+#contact{
+    min-height: 500px;
+    height: auto;
+    background-color: rgb(90,150,90);
+}
+
+#map {
+   height: 400px;
+   background-color: grey;
+}
+
+.contact__container{
+    padding:60px 0;
+}
+
+.btn2{
+    padding: 10px;
+}
+/*footer*/
+
+
+.footer__down {
+    /* Style for "bg-foodter" */
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    min-height: 90px;
+    height: auto;
+}
+
+.footer_p {
+    /* Style for "© 2015 Com" */
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.footer_span {
+    color: rgb(255, 43, 88);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.footer__down img{
+    width: 20%;
+    height: 20%;
+}
