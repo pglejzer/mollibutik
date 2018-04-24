@@ -1,5 +1,6 @@
 @media(max-width:991px){
-    .gallery__h2{
+    .gallery__h2,
+    .contact__h2_main {
         font-size: 70px;
     }
 }
