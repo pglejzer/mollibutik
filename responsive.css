@@ -1,0 +1,7 @@
+@media(max-width:991px){
+    .gallery__h2{
+        font-size: 70px;
+    }
+}
+@media(max-width:768px){}
+@media(max-width:385px){}
