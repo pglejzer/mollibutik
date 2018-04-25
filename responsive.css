@@ -1,7 +1,9 @@
 @media(max-width:991px){
-    .gallery__h2,
-    .contact__h2_main {
+    .gallery__h2 {
         font-size: 70px;
+    }
+    .contact__h2_main {
+        font-size: 50px;
     }
 }
 @media(max-width:768px){}
