@@ -7,29 +7,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Molli Boutique</title>
     <link rel="shortcut icon" href="images/logs/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
         crossorigin="anonymous">
-    <script async defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script async defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script async defer src="//code.jquery.com/jquery-3.3.1.min.js"></script>>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIWcJzaKMo0sLVEZ1OXGd9STvvBjJn7S0&callback=initMap">
     </script>
-
+    <script src="script.js"></script>
 </head>
 
-<body data-spy="scroll ">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
     <!-- Header / nav -->
     <header id="home" class="header">
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header ">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -39,30 +38,40 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="text-uppercase">
-                            <a href="#home">Strona główna</a>
+                        <li class="text-uppercase nav__li text-center">
+                            <a href="#home">
+                                <span class="nav__span"></span>Strona główna</span>
+                            </a>
                         </li>
-                        <li class="text-uppercase">
-                            <a href="#about_us">O nas</a>
+                        <li class="text-uppercase nav__li text-center">
+                            <a href="#about_us">
+                                <span class="nav__span">O nas</span>
+                            </a>
                         </li>
-                        <li class="text-uppercase">
-                            <a href="#gallery">Galeria</a>
+                        <li class="text-uppercase nav__li text-center">
+                            <a href="#gallery">
+                                <span class="nav__span">Galeria</span>
+                            </a>
                         </li>
-                        <li class="text-uppercase">
-                            <a href="#contact">Kontakt</a>
+                        <li class="text-uppercase nav__li text-center">
+                            <a href="#contact">
+                                <span class="nav__span">Kontakt</span>
+                            </a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <!-- slider/main section -->
         <div class="container container1">
             <div class="row">
                 <div class="col-md-5 row1">
                     <div class="row text-center">
                         <h1 class="main__h1 ">Molli Boutique</h1>
                         <p class="main__p ">Sklep z odzieżą damską w Siedlcach</p>
-                        <p class="main__p animated pulse infinite">Strona w trakcie
+                        <p class="main__p animated pulse infinite hidden-xs hidden-sm">Strona w trakcie
+                            <span class="main__hour">budowy</span>
+                        </p>
+                        <p class="main__p hidden-md hidden-lg hidden-xl">Strona w trakcie
                             <span class="main__hour">budowy</span>
                         </p>
                     </div>
@@ -76,27 +85,35 @@
                     </div>
                 </div>
                 <div class="col-md-7">
-                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="null">
+                    <div id="carousel-example-generic" class="carousel slide " data-ride="carousel" data-interval="3000" data-pause="null">
                         <!-- Indicators -->
-                        <ol class="carousel-indicators ">
+                        <ol class="carousel-indicators">
                             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                             <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
                         </ol>
+
                         <!-- Wrapper for slides -->
-                        <div class="carousel-inner" role="listbox ">
+                        <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                                <img  src="images/slider1/classic-close-up-clothes-298864.jpg" alt="">
-                                <div class="carousel-caption">
-                                    <h1 class="carousel__h1">Przykładowe zdjęcia</h1>
-                                    <p class="carousel__p">Tutaj mozna coś napisać</p>
-                                </div>
+                                <img src="images/slider1/blur-box-business-297933.jpg">
                             </div>
                             <div class="item">
-                                <img  src="images/slider1/blur-box-business-297933.jpg" alt=""> </div>
+                                <img src="images/slider1/cardigan-clothes-sweater-45982.jpg">
+                            </div>
                             <div class="item">
-                                <img  src="images/slider1/blur-box-business-297933.jpg" alt=""> </div>
+                                <img src="images/slider1/classic-close-up-clothes-298864.jpg">
+                            </div>
+                            <div class="item">
+                                <img src="images/slider1/blur-box-business-297933.jpg">
+                            </div>
+                            <div class="item">
+                                <img src="images/slider1/close-up-clothes-display-80412.jpg">
+                            </div>
                         </div>
+
                         <!-- Controls -->
                         <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
                             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -109,6 +126,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </header>
     <section id="about_us">
@@ -141,7 +159,7 @@
         <div class="container">
             <div class="col-md-4">
                 <a href="#">
-                    <img src="images/sekcja_galeria/1.jpg" class="img-responsive" alt="random photo"> </a>
+                    <img src="images/sekcja_galeria/1.jpg" class="center-block img-responsive gallery__img" alt="random photo"> </a>
                 <div class="gallery__btn__container">
                     <a href="#">
                         <button class="btn btn-danger btn1 animated tada infinite ">
@@ -152,7 +170,7 @@
             </div>
             <div class="col-md-4">
                 <a href="#">
-                    <img src="images/sekcja_galeria/2.jpg" class="img-responsive" alt="random photo"> </a>
+                    <img src="images/sekcja_galeria/2.jpg" class="center-block img-responsive" alt="random photo"> </a>
                 <div class="gallery__btn__container">
                     <a href="#">
                         <button class="btn btn-danger btn1 animated tada infinite">
@@ -163,7 +181,7 @@
             </div>
             <div class="col-md-4">
                 <a href="#">
-                    <img src="images/sekcja_galeria/3.jpg" class="img-responsive" alt="random photo"> </a>
+                    <img src="images/sekcja_galeria/3.jpg" class="center-block img-responsive gallery__img" alt="random photo"> </a>
                 <div class="gallery__btn__container">
                     <a href="#">
                         <button class="btn btn-danger btn1 animated tada infinite">
@@ -184,7 +202,7 @@
         <div class="container">
             <div class="col-md-4">
                 <a href="#">
-                    <img src="images/sekcja_galeria/4.jpg" class="img-responsive" alt="random photo"> </a>
+                    <img src="images/sekcja_galeria/4.jpg" class="center-block img-responsive" alt="random photo"> </a>
                 <div class="gallery__btn__container">
                     <a href="#">
                         <button class="btn btn-danger btn1 animated jello infinite">
@@ -195,7 +213,7 @@
             </div>
             <div class="col-md-4">
                 <a href="#">
-                    <img src="images/sekcja_galeria/5.jpg" class="img-responsive" alt="random photo"> </a>
+                    <img src="images/sekcja_galeria/5.jpg" class="center-block img-responsive" alt="random photo"> </a>
                 <div class="gallery__btn__container">
                     <a href="#">
                         <button class="btn btn-danger btn1 animated jello infinite">
@@ -206,7 +224,7 @@
             </div>
             <div class="col-md-4">
                 <a href="#">
-                    <img src="images/sekcja_galeria/5.jpg" class="img-responsive" alt=""> </a>
+                    <img src="images/sekcja_galeria/5.jpg" class="center-block img-responsive" alt=""> </a>
                 <div class="gallery__btn__container">
                     <a href="#">
                         <button class="btn btn-danger btn1 animated jello infinite">
@@ -219,34 +237,40 @@
     </section>
     <section id="contact">
         <div class="container">
-            <h2 class="contact__h2_main text-center">Kontakt</h2>
-            <div class="row row5">
-                <div class="col-md-8">
+            <div class="col-md-12 text-center">
+                <h2 class="contact1__h2">Kontakt</h2>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 maps text-center">
                     <h2 class="contact__h2 text-center">Mapa</h2>
-                    <div id="map"></div>
+                    <div id="map" class="maps"></div>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="col-md-6 text-center">
                     <h2 class="contact__h2">Adres</h2>
-                    <p class="contact__p">Galeria Siedlce
-                        <br> Piłsudskiego 74
-                        <br> 08-110 Siedlce
-                        <br> Polska
-                    </p>
+                    <address>
+                    Galeria Siedlce <br>
+                    Piłsudskiego 74<br>
+                    08-110 Siedlce<br>
+                    Polska    <br>
                     <a href="https://www.google.com/maps/dir//Molli+Butik/data=!4m8!4m7!1m0!1m5!1m1!1s0x471f5a56a89a107d:0xbe3392df2ea0ed46!2m2!1d22.269512!2d52.168261">
                         <button type="button" class="btn btn-danger btn2">Wyznacz trasę</button>
                     </a>
+                </address>
                 </div>
-            <div class="col-md-4 text-center">
-                <h2 class="contact__h2">Godziny otwarcia:</h2>
-                <ul class="contact__ul">
-                    <li>pon. 09:00 - 21:00</li>
-                    <li>wt. 09:00 - 21:00</li>
-                    <li>śr. 09:00 - 21:00</li>
-                    <li>czw. 09:00 - 21:00</li>
-                    <li>pt. 09:00 - 21:00</li>
-                    <li>sob. 09:00 - 21:00</li>
-                    <li>niedz. 09:00 - 21:00</li>
-                </ul>
+                <div class="col-md-6 text-center contact__ul__main">
+                        <h2 class="contact__h2">Godziny otwarcia</h2>
+                        <ul class="contact__ul text-center">
+                            <li class="contact__li ">Pon. 09:00 - 21:00</li>
+                            <li class="contact__li ">Wt. 09:00 - 21:00</li>
+                            <li class="contact__li  ">Śr. 09:00 - 21:00</li>
+                            <li class="contact__li">Czw. 09:00 - 21:00</li>
+                            <li class="contact__li ">Pt. 09:00 - 21:00</li>
+                            <li class="contact__li ">Sob. 09:00 - 21:00</li>
+                            <li class="contact__li">Wt. 10:00 - 20:00</li>
+                        </ul>
+                    </div>
             </div>
         </div>
         </div>
@@ -254,34 +278,29 @@
         </div>
     </section>
     <footer class="footer__down">
-        <div class="container center-block text-center">
-            <div class="row text-center visible-sm visible-xs">
-                <div class="col-md-4 col-lg-4 ">
-                    <p class="footer_p">Wykonane przez
-                        <span class="footer_span">Piotr Glejzer</span>
-                    </p>
-                </div>
-                <div class="col-sm-4 col-xs-4 col-md-4 col-lg-4">
-                    <img class="footer__img" src="images/logs/logo-trans2.png" alt="down_logo"> </div>
-                <div class="col-sm-12 col-xs-12 col-md-4 col-lg-4">
-                    <p class="footer_p">© 2018 Company. Wszystkie prawa zastrzeżone.</p>
-                </div>
-            </div>
-            <div class="row text-center hidden-xs hidden-sm">
-                <div class="col-md-4 col-lg-4 ">
-                    <p class="footer_p">© 2018 Company. Wszystkie prawa zastrzeżone.</p>
-                </div>
-                <div class="col-sm-4 col-xs-4col-md-4">
-                    <a href="https://www.facebook.com/MolliButik/">
+        <div class="container text-center">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <a class="footer__a" href="https://www.facebook.com/MolliButik/">
+                        <i class="fab footer__fbinst fa-facebook-square"></i>
+                    </a>
+                    <a class="footer__a1" href="#home">
                         <img class="footer__img" src="images/logs/logo-trans2.png" alt="down_logo">
                     </a>
+                    <a class="footer__a" href="https://www.instagram.com/molli.butik/">
+                        <i class="fab footer__fbinst fa-instagram"></i>
+                    </a>
                 </div>
+
                 <div class="col-sm-12 col-xs-12 col-md-4 c">
                     <p class="footer_p">Strona wykonana przez
                         <a class="footer__a" href="www.pglejzer.pl">
                             <span class="footer_span">Piotr Glejzer</span>
                         </a>
                     </p>
+                </div>
+                <div class="col-md-4 col-lg-4 ">
+                    <p class="footer_p">© 2018 Company. Wszystkie prawa zastrzeżone.</p>
                 </div>
             </div>
         </div>

@@ -1,10 +1,57 @@
-@media(max-width:991px){
+@media(max-width:991px) {
     .gallery__h2 {
         font-size: 70px;
     }
     .contact__h2_main {
         font-size: 50px;
     }
+    .main__social__icons {
+        margin-bottom: 35px;
+    }
+    .footer__img {
+        width: 50px;
+        height: 50px;
+    }
+    .footer__social__icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    footer .footer__fbinst {
+        font-size: 30px;
+    }
+    .maps {
+        padding-bottom: 30px;
+    }
+    .cotanct__mobile {
+        display: flex;
+    }
+    .contact__ul__main{
+        padding-bottom: 30px;
+    }
+    .footer_p{
+        padding-top: 0px;
+    }
 }
-@media(max-width:768px){}
-@media(max-width:385px){}
+
+@media(max-width:768px) {
+    nav {
+        background-color: rgb(242, 222, 222) !important;
+    }
+    .nav__li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav__li a {
+        font-size: 12px;
+    }
+    .nav__span {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .row1 {
+        padding-top: 30px;
+    }
+}
