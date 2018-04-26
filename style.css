@@ -121,7 +121,7 @@ nav {
 }
 
 #about_us {
-    background: rgb(248, 230, 217);
+    background: #d88d94;
     font-family: 'Raleway';
 }
 
@@ -144,7 +144,7 @@ nav {
 
 #gallery {
     font-family: 'Raleway';
-    background: rgba(207, 135, 145, 0.4)
+    background-color: #F8A9b1;
 }
 
 .gallery__h2 {
@@ -200,7 +200,7 @@ nav {
 #contact {
     min-height: 800px;
     height: auto;
-    background-color: #CF8791;
+    background: rgba(207, 135, 145, 0.6)
 }
 
 #map {
