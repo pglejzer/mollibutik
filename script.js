@@ -16,6 +16,7 @@ $(function () {
     $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
   });
 });
+
 /*Hamburger*/
 
 $(document).ready(function () {
@@ -25,15 +26,32 @@ $(document).ready(function () {
   });
 });
 
+/*Google maps*/
 
-var map;
+      function initMap() {
+        var myLatlng = {lat: 52.168299, lng: 22.26951,};
 
-function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: {
-      lat: 52.1689738,
-      lng: 22.2675806
-    },
-    zoom: 15
-  });
-}
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: myLatlng
+          });
+  
+          var marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map,
+            title: 'Click to zoom'
+          });
+  
+          map.addListener('center_changed', function() {
+            // 3 seconds after the center of the map has changed, pan back to the
+            // marker.
+            window.setTimeout(function() {
+              map.panTo(marker.getPosition());
+            }, 3000);
+          });
+  
+          marker.addListener('click', function() {
+            map.setZoom(20);
+            map.setCenter(marker.getPosition());
+          });
+        }
