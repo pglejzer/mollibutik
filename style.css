@@ -3,7 +3,9 @@
 @import url('https://fonts.googleapis.com/css?family=Petit+Formal+Script');
 
 /*Header*/
-
+body{
+    font-family: 'Raleway';
+}
 .header__img {
 width: 60px;
 height: 60px;
@@ -17,7 +19,6 @@ nav {
     background-color: transparent !important;
     border: 0!important;
     padding: 20px;
-    font-family: 'Raleway';
     font-weight: 700;
 }
 #myNavbar .nav__li {
@@ -52,13 +53,13 @@ nav {
 
 
 .header {
-    background: none;
+    background: rgb(255,255,255);
     height: auto;
     min-height: 800px;
     padding-bottom: 100px;
 }
 
-.header::before {
+/* .header::before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -69,7 +70,7 @@ nav {
     background: url(images/logs/logo-trans2.png) no-repeat center center;
     background-size: cover;
     opacity: 0.12;
-}
+} */
 
 /*Main*/
 
@@ -118,11 +119,9 @@ nav {
 
 #about_us {
     background: #d88d94;
-    font-family: 'Raleway';
 }
 
 .about__us__h2 {
-    font-family: 'Petit Formal Script', cursive;
     font-weight: 600;
     font-size: 90px;
 }
@@ -139,12 +138,10 @@ nav {
 /*Gallery*/
 
 #gallery {
-    font-family: 'Raleway';
     background-color: #F8A9b1;
 }
 
 .gallery__h2 {
-    font-family: 'Petit Formal Script', cursive;
     font-size: 90px;
     font-weight: 600;
     padding-top: 50px;
@@ -179,7 +176,6 @@ nav {
 }
 
 .gallery__h3 {
-    font-family: 'Petit Formal Script', cursive;
     font-size: 70px;
 }
 
@@ -208,12 +204,10 @@ nav {
 .contact1__h2{
     padding-top: 100px;
     font-size: 60px;
-    font-family: 'Raleway';
 }
 .contact__h2{
     padding-top: 30px;
-    font-size: 30px;
-    font-family: 'Raleway';
+    font-size: 30px;;
 }
 .contact__ul{
     list-style: none;
