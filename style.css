@@ -14,6 +14,9 @@ height: 60px;
 .navbar-fixed-top.scrolled {
     background-color: rgb(242, 222, 222)!important;
 }
+.navbar-fixed-top{
+    z-index: 1;
+}
 
 nav {
     background-color: transparent !important;
@@ -71,7 +74,6 @@ nav {
     background-size: cover;
     opacity: 0.12;
 }
-
 /*Main*/
 
 .container1 {
