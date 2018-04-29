@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900');
 @import url('https://fonts.googleapis.com/css?family=Petit+Formal+Script');
 
+
 /*Header*/
 body{
     font-family: 'Raleway';
@@ -112,6 +113,14 @@ nav {
     padding: 10px;
 }
 
+/*Carousell
+delete 'carousel-example-generic img' it if you want have bigger images 
+*/
+
+#carousel-example-generic img{
+    max-width: auto;
+    max-height: 300px;
+}
 /*About us*/
 
 .row2 {

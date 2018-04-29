@@ -1,6 +1,5 @@
     /* Cookies */
 
-        
     function WHCreateCookie(name, value, days) {
       var date = new Date();
       date.setTime(date.getTime() + (days*24*60*60*1000));
@@ -17,10 +16,6 @@
     }
     return null;
   }
-  /*Popup window-facebook*/
-
-
-  
   window.onload = WHCheckCookies;
   
   function WHCheckCookies() {
@@ -75,8 +70,7 @@ $(document).ready(function () {
             zoom: 15,
             center: myLatlng
           });
-  
-          var marker = new google.maps.Marker({
+  var marker = new google.maps.Marker({
             position: myLatlng,
             map: map,
             title: 'Click to zoom'
@@ -95,7 +89,4 @@ $(document).ready(function () {
             map.setCenter(marker.getPosition());
           });
         }
-
-
-    
 
