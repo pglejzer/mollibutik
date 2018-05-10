@@ -139,6 +139,8 @@ delete 'carousel-example-generic img' it if you want have bigger images
 
 .about__us_p {
     font-weight: 500;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .about_us__img {
