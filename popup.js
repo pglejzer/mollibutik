@@ -97,6 +97,7 @@ var Popup = (function () {
   
           previousY = e.pageY;
         });
+        }, 5000);
       }
     };
   
